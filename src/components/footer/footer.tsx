@@ -7,7 +7,7 @@ export default function Footer() {
         <footer className="text-center text-lg-start ">
           <section className="d-flex justify-content-between p-4">
             <div className="me-5">
-              <span>Fale com a gente atraves dos nossos canais online:</span>
+              <span>Fale conosco atraves dos nossos canais online:</span>
             </div>
           </section>
           <section className="">
@@ -17,8 +17,8 @@ export default function Footer() {
                   <h6 className="text-uppercase fw-bold">ShopeeD</h6>
                   <hr className="mb-4 mt-0 d-inline-block mx-auto" />
                   <p>
-                    Somos uma empresa de compra e venda de animais, cachorros,
-                    papagaios, repteis e até ariranhas!
+                    Somos uma empresa de compra e venda de animais, cachorros e
+                    aves..
                   </p>
                 </div>
                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -34,16 +34,6 @@ export default function Footer() {
                       Papagaios e aves
                     </a>
                   </p>
-                  <p>
-                    <a href="#!" className="text-white">
-                      Ariranhas
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-white">
-                      Tubarões
-                    </a>
-                  </p>
                 </div>
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   <h6 className="text-uppercase fw-bold">Uteis</h6>
@@ -56,11 +46,6 @@ export default function Footer() {
                   <p>
                     <a href="#!" className="text-white">
                       Se torne um vendedor
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-white">
-                      Alugue sua ariranha
                     </a>
                   </p>
                   <p>
