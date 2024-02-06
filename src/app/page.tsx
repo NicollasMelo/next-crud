@@ -1,5 +1,4 @@
 import Form from "@/components/blog/blog";
-import Cards from "@/components/cards/cards";
 import Footer from "@/components/footer/footer";
 import ResponsiveAppBar from "@/components/navbar/navbar";
 import Image from "next/image";
