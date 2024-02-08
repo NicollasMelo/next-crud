@@ -1,6 +1,6 @@
 "use client";
 import { InviteFriends } from "@/app/utils/InviteFriends";
-import { ChangeEvent, useState, useEffect } from "react";
+import { ChangeEvent, useState } from "react";
 
 export default function Form() {
   const [name, setName] = useState<string>("");

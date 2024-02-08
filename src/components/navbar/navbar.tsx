@@ -13,6 +13,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { useState } from "react";
+import Link from "next/link";
 
 const pages = ["Animais", "Preço", "Sobre"];
 const settings = ["Perfil", "Logout"];
@@ -40,23 +41,23 @@ export default function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
+          <Link
+            href="http://localhost:3000/"
+            style={{
               fontFamily: "monospace",
-              fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
-            ShopeeD
-          </Typography>
+            <h4
+              style={{
+                fontWeight: 900,
+              }}
+            >
+              ShopeeD
+            </h4>
+          </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -110,15 +111,36 @@ export default function ResponsiveAppBar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              <Link
+                href="http://localhost:3000/about"
+                style={{
+                  color: "white",
+                  display: "block",
+                  textDecoration: "none",
+                }}
               >
-                {page}
-              </Button>
-            ))}
+                Convidados
+              </Link>
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              <Link
+                href="http://localhost:3000/about"
+                style={{
+                  color: "white",
+                  display: "block",
+                  textDecoration: "none",
+                }}
+              >
+                Animais
+              </Link>
+            </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
